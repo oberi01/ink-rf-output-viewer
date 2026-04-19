@@ -34,7 +34,7 @@ const App = () => {
 
   // Early Return nach den Hooks
   if (visibleTests.length === 0) {
-    return <Text color="yellow">No tests found (q to quit, a to toggle all/failed)</Text>;
+    return <Text color="yellow">No failed tests found (q to quit, a to toggle all/failed)</Text>;
   }
 
   // --- LOGIK FÜR WINDOWING ---

@@ -1,0 +1,21 @@
+{
+  "name": "ink-rf-output-viewer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.6",
+    "ink": "^4.4.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "@types/react": "^18.3.28",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.9.3"
+  }
+}

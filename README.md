@@ -1,5 +1,6 @@
 # ink-rf-output-viewer
-Viewer for RobotFramework output.xml file in a terminal session
+Interactive terminal viewer for RobotFramework output.xml file 
+built with  [Ink](https://github.com).
 
 ## Intended use
 The scope of this little tool is to provide the user with an overview
@@ -14,17 +15,47 @@ those should be used.
 This tool is intended to be used by developers and testers which have
 basic knowledge of Robot Framework and npm.
 
-## Requirements
-The tool shall
-- Display test case names including suite hierarchy
-- Display ALL or only FAILED tests
-- For a selected Test show Error messages and contained Keywords
-- Provide a good UX experience
+## Features
+- **Filtered**: Switch between all and only failed tests (Key `a`).
+- **Detail View**: View of Error messages and Keywords in terminal session.
+- **Windowing**: Support for large test suites.
+- **Navigation**: via Arrow Up/Down keys.
 
 ## Installation
 
-    npm install ink react fast-xml-parser
-    npm install --save-dev typescript @types/node @types/react
-  
+1. Clone Repository
+   ```bash
+   git clone https://github.com/oberi01/ink-rf-output-viewer.git
+   cd ink-rf-output-viewer
+
+2. Install Dependencies
+   ```bash
+   npm install ink react fast-xml-parser
+   npm install --save-dev typescript @types/node @types/react
+
+## Run Tool
+1. Run TypeScript Compiler (only needed once)
+   ```bash
+   npx tsc
+
+2. Run Tool
+   ```bash
+    node dist/index.js 
+
+## Dependencies
+- [Node.js](https://nodejs.org)
+- npm
+
 ## License
 This project is licensed under the MIT License.
+
+
+
+
+
+
+
+
+
+
+
